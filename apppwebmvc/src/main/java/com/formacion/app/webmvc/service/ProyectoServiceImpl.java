@@ -44,6 +44,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 		toUpdateProyecto.setNombre(proyecto.getNombre());
 		toUpdateProyecto.setFecha_inicio(proyecto.getFecha_inicio());
 		toUpdateProyecto.setFecha_fin(proyecto.getFecha_fin());
+		toUpdateProyecto.setActivo(proyecto.isActivo());
 		return this.proyectoDAO.save(toUpdateProyecto);
 	}
 
